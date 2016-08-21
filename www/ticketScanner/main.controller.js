@@ -13,7 +13,9 @@ function MainViewController() {
 
         ////////////////
 
-        function activate() { }
+        function activate() {
+            vm.test = 'plz work';
+         }
     }
 
 MainViewController.prototype.scan = function(){
