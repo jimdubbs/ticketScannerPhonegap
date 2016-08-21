@@ -10,11 +10,11 @@
             $urlMatcherFactoryProvider, $httpProvider, $mdThemingProvider) {
             $urlMatcherFactoryProvider.strictMode(false);
 
-            $locationProvider
-                .html5Mode({
-                    enabled: false,
-                    requireBase: true
-                });
+            // $locationProvider
+            //     .html5Mode({
+            //         enabled: false,
+            //         requireBase: true
+            //     });
 
             $stateProvider
                 .state('main', {
