@@ -52,8 +52,25 @@
     <script src="/ticketScanner/main.controller.js"></script>
     <script src="/ticketScanner/ticket.service.js"></script>
 
+    <script type="text/javascript" charset="utf-8">
+        // When the Cordova API has loaded, a 'deviceready' event is thrown.
+        document.addEventListener("deviceready", onDeviceReady, false);
+         
+        // When we hear this event, we will bootstrap the body with the qolloApp
+        // module. If we try to do this beforehand (i.e., <body ng-app='qolloApp'>),
+        // we run the risk of calling the Cordova API before it has loaded.
+        function onDeviceReady() {
+            alert('device ready');
+            angular.bootstrap(document.body, ['ticketScanner']);
+        }
+         
+        // If you want to just deploy this as a web application, remove the above
+        // lines and uncomment out the below line:
+        // angular.bootstrap(document.body, ['qolloApp']);
+ 
+    </script>
     <!--<h1>{{vm.test}}</h1>-->
-    <md-content layout-fill ui-view="main">
+    <md-content layout-fill ui-view>
     </md-content>
 </body>
 

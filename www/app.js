@@ -20,10 +20,11 @@
                 .state('main', {
                     controller: 'MainViewController',
                     controllerAs: 'vm',
-                    url: '/',
+                    url: '/main',
                     templateUrl: 'ticketScanner/main.html'
                 });
 
+                $urlRouterProvider.otherwise('/main');
             // $httpProvider.interceptors.push('httpInterceptor');
 
             $mdThemingProvider.theme('default')
