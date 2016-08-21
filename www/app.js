@@ -21,7 +21,7 @@
                     controller: 'MainViewController',
                     controllerAs: 'vm',
                     url: '/',
-                    templateUrl: '/ticketScanner/main.html'
+                    templateUrl: 'ticketScanner/main.html'
                 });
 
             // $httpProvider.interceptors.push('httpInterceptor');
