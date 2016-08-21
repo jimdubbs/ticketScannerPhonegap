@@ -7,7 +7,7 @@
 
     TicketService.$inject = ['$http', '$q', '$state'];
 
-    function AppointmentDataService($http, $q, $state) {
+    function TicketService($http, $q, $state) {
         var service = {
             ticketResult: {},
             scanTicket: scanTicket
